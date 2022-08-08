@@ -1,0 +1,50 @@
+Input:
+यह	DM_DMD
+एशिया	N_NNP
+की	PSP
+सबसे	RP_INTF
+बड़ी	JJ
+मस्जिदों	N_NN
+में	PSP
+से	PSP
+एक	QT_QTC
+है	V_VM
+।	RD_PUNC
+
+Output:
+[[{'है': 'V_VM'}, {'एक': 'QT_QTC'}, {'।': 'RD_PUNC'}],
+[{'एशिया': 'N_NNP'}, {'यह': 'DM_DMD'}, {'की': 'PSP'}],
+[{'मस्जिदों': 'N_NN'}, {'सबसे': 'RP_INTF'}, {'बड़ी': 'JJ'}, {'में': 'PSP'}, {'से': 'PSP'}]]
+
+Input:
+इसे	PR_PRP
+नवाब	N_NN
+शाहजेहन	N_NNP
+ने	PSP
+बनवाया	V_VM
+था	V_VAUX
+।	RD_PUNC
+
+Output:
+[[{'था': 'V_VAUX'} {'।': 'RD_PUNC'}], {'बनवाया': 'V_VM'}],
+[{'शाहजेहन': 'N_NNP'}, {'इसे': 'PR_PRP'}, {'नवाब': 'N_NN'}, {'ने': 'PSP'}]]
+
+Input:
+इसके	PR_PRP
+चारों	QT_QTC
+ओर	N_NST
+दीवार	N_NN
+है	V_VM
+और	CC_CCD
+बीच	N_NST
+में	PSP
+एक	QT_QTC
+तालाब	N_NN
+है	V_VM
+।	RD_PUNC
+
+Output:
+[[{'में': 'PSP'}, {'बीच': 'N_NST'}],
+[{'इसके': 'PR_PRP'}],
+[{'तालाब': 'N_NN'}, {'एक': 'QT_QTC'}, {'।': 'RD_PUNC'}],
+[{'चारों': 'QT_QTC'}], [{'दीवार': 'N_NN'}, {'ओर': 'N_NST'}, {'है': 'V_VM'}, {'और': 'CC_CCD'}, {'है': 'V_VM'}]]
